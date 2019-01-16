@@ -1,0 +1,43 @@
+body{
+font-family: 'Dancing Script', cursive;
+background-color: #02010a;
+}
+
+body img{
+  box-shadow: 2px 0 0 #02010a;
+}
+#contenido{
+  align-content: center;
+  max-width: 900px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px 0 0 #02010a;
+  border-radius: 10px 10px 0 0;
+  order: 1;
+  width: 100%
+}
+
+a{
+  float: right;
+}
+
+@media (min-width:900px){
+
+}
+@media (max-width:900px){
+
+}
+
+#imagenes {
+  background-color: #82c3a6;
+  order:2;
+}
+
+figure>img{
+  width: 100%
+}
