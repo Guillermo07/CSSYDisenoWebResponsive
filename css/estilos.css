@@ -1,26 +1,30 @@
 body{
 font-family: 'Dancing Script', cursive;
 background-color: #02010a;
-align-content: center;
+max-width: 900px;
 }
 
 body img{
-  box-shadow: 2px 0 0 #02010a;
+  box-shadow: 2px 2px 0 #02010a;
 }
 #contenido{
-  align-content: center;
-  max-width: 900px;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 header {
   background-color: #5b7989;
   color: white;
-  text-shadow: 2px 0 0 #02010a;
   border-radius: 10px 10px 0 0;
   order: 1;
   width: 100%;
+}
+
+h1{
+    float: left;
+    padding-left: 20px;
+    text-shadow: 2px 0 0 #02010a;
 }
 
 nav{
@@ -32,23 +36,16 @@ nav ul {
     padding: 0;
     list-style: none;
     padding-right: 20px;
-  }
+}
+
 nav ul li {
     display: inline-block;
-    line-height: 80px;
+    line-height: 100px;
 }
       
 nav ul li a {
     display: block;
     padding: 0 10px;
-    text-decoration: none;
-}
-
-@media (min-width:900px){
-
-}
-@media (max-width:900px){
-
 }
 
 #imagen-principal {
@@ -56,26 +53,121 @@ nav ul li a {
   order:2;
   width: 100%;
 }
-img.imagen1{
-  width: 100%;
-}
+
 #imagen-secundaria {
 
 background-color: #d5c75f;
-  order:3;
+order:3;
+width: 100%;
+align-content: center;
+}
+
+footer{
+  border-radius: 0 0 10px 10px;
+  background-color: #c6d5c5;
+  order: 4;
+  width: 100%;
+}
+
+@media (min-width:900px){
+
+img.imagen1{
   width: 100%;
 }
 
 img.imagen2{
+  float: right;
   width: 45%;
+  border: 1px solid;
+}
+
+img.imagen3{
+  float: left;
+  width: 45%;
+  border: 1px solid;
+}
+
+#contacto{
+  width: 25%;
+  padding-left: 10px;
+  float: left;
+}
+
+#contacto ul{
+  list-style: none;
+}
+
+#terminos{
+  width: 25%;
+  float: left;
+
+}
+#redes-sociales{
+  width: 25%;
+  float: left;
+}
+
+#redes-sociales ul{
+  list-style: none;
+}
+
+#derechos{
+  width: 25%;
+  float: right;
+}
+}
+
+@media (max-width:900px){
+
+img.imagen1{
+  width: 100%;
+}
+
+img.imagen2{
+  width: 100%;
   float: right;
   border: 1px solid;
-  height: 250px;
   
 }
+
 img.imagen3{
-  width: 45%;
+  width: 100%;
   float: left;
   border: 1px solid;
-  height: 250px;
+}
+
+#contacto{
+  width: 100%;
+  padding-left: 10px;
+  margin: auto;
+  display: block;
+}
+
+
+#contacto ul{
+  list-style: none;
+}
+
+#terminos{
+  width: 100%;
+  margin: auto;
+  display: block;
+
+}
+#redes-sociales{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#redes-sociales ul{
+  list-style: none;
+}
+
+#derechos{
+  width: 100%;
+  margin: auto;
+  padding-right: 10px;
+  display: block;
+}
 }
