@@ -1,11 +1,15 @@
 body{
 font-family: 'Dancing Script', cursive;
 background-color: #02010a;
-max-width: 900px;
+
 }
 
 body img{
   box-shadow: 2px 2px 0 #02010a;
+}
+
+body #contenido{
+padding-left: 10%
 }
 #contenido{
   display: flex;
@@ -52,6 +56,7 @@ nav ul li a {
   background-color: #82c3a6;
   order:2;
   width: 100%;
+  padding: 2%
 }
 
 #imagen-secundaria {
@@ -60,6 +65,8 @@ background-color: #d5c75f;
 order:3;
 width: 100%;
 align-content: center;
+padding: 2%
+
 }
 
 footer{
@@ -67,6 +74,7 @@ footer{
   background-color: #c6d5c5;
   order: 4;
   width: 100%;
+  padding-left: 4%;
 }
 
 @media (min-width:900px){
@@ -75,45 +83,60 @@ img.imagen1{
   width: 100%;
 }
 
-img.imagen2{
+.imagen2{
+  width: 50%;
+}
+.imagen3{
+  width: 50%;
+}
+.imagen2 img{
   float: right;
-  width: 45%;
+  width: 90%;
   border: 1px solid;
 }
 
-img.imagen3{
+.imagen3 img{
   float: left;
-  width: 45%;
+  width: 90%;
   border: 1px solid;
 }
+figcaption{
+  text-align: center;
 
-#contacto{
+}
+
+/*Pie de pagina*/
+
+.contacto{
+  float: left;
   width: 25%;
-  padding-left: 10px;
+  
+}
+    
+.terminos{
+  width: 25%;
   float: left;
 }
 
-#contacto ul{
-  list-style: none;
-}
-
-#terminos{
+.redes-sociales{
   width: 25%;
   float: left;
-
+  align-self: auto;
 }
-#redes-sociales{
+
+.redes-sociales img{
+  width: 10%;
+  box-shadow: 0 0 0 0;
+}
+.derechos{
   width: 25%;
   float: left;
-}
+}    
 
-#redes-sociales ul{
-  list-style: none;
-}
-
-#derechos{
-  width: 25%;
-  float: right;
+.derechos img{
+  width: 5%;
+  box-shadow: 0 0 0 0;
+  padding-right: 5%;
 }
 }
 
@@ -136,38 +159,10 @@ img.imagen3{
   border: 1px solid;
 }
 
-#contacto{
-  width: 100%;
-  padding-left: 10px;
-  margin: auto;
-  display: block;
+figcaption{
+  text-align: center;
+
 }
 
 
-#contacto ul{
-  list-style: none;
-}
-
-#terminos{
-  width: 100%;
-  margin: auto;
-  display: block;
-
-}
-#redes-sociales{
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-#redes-sociales ul{
-  list-style: none;
-}
-
-#derechos{
-  width: 100%;
-  margin: auto;
-  padding-right: 10px;
-  display: block;
-}
 }
