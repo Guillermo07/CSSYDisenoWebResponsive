@@ -9,12 +9,14 @@ body img{
 }
 
 body #contenido{
-padding-left: 10%
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
 }
 #contenido{
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-content: center;
 }
 
 header {
@@ -24,6 +26,34 @@ header {
   order: 1;
   width: 100%;
 }
+
+#imagen-principal {
+  background-color: #82c3a6;
+  order:2;
+  width: 100%;
+  padding: 2%
+}
+
+#imagenes-secundarias {
+
+background-color: #d5c75f;
+order:3;
+width: 100%;
+padding: 2%
+
+}
+
+footer{
+  border-radius: 0 0 10px 10px;
+  background-color: #c6d5c5;
+  order: 4;
+  width: 100%;
+  padding-left: 4%;
+}
+
+/*Pantalla de Computadora*/
+
+@media (min-width:900px){
 
 h1{
     float: left;
@@ -44,65 +74,56 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    line-height: 100px;
+    line-height: 5;
 }
       
 nav ul li a {
     display: block;
     padding: 0 10px;
+    color: white;
 }
 
-#imagen-principal {
-  background-color: #82c3a6;
-  order:2;
-  width: 100%;
-  padding: 2%
-}
-
-#imagen-secundaria {
-
-background-color: #d5c75f;
-order:3;
-width: 100%;
-align-content: center;
-padding: 2%
-
-}
-
-footer{
-  border-radius: 0 0 10px 10px;
-  background-color: #c6d5c5;
-  order: 4;
-  width: 100%;
-  padding-left: 4%;
-}
-
-@media (min-width:900px){
+/*Segunda Seccion*/
 
 img.imagen1{
   width: 100%;
 }
 
-.imagen2{
+/*Tercera Seccion*/
+
+#imagenes-secundarias .imagen2{
   width: 50%;
+  float: left;
 }
-.imagen3{
+#imagenes-secundarias .imagen3{
   width: 50%;
+  float: right;
 }
 .imagen2 img{
-  float: right;
-  width: 90%;
+  width: 100%;
   border: 1px solid;
+  transition: transform 1s;
+}
+
+.imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
 }
 
 .imagen3 img{
-  float: left;
-  width: 90%;
+  width: 100%;
   border: 1px solid;
+  transition: transform 1s;
 }
+
+.imagen3 img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
 figcaption{
   text-align: center;
-
+  text-decoration: underline;
 }
 
 /*Pie de pagina*/
@@ -140,29 +161,70 @@ figcaption{
 }
 }
 
+/*Pantalla Celular*/
+
 @media (max-width:900px){
+
+/*Cabecera*/
+
+  h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 2px 0 0 #02010a;
+}
+
+nav{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 3;
+}
+      
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+}
 
 img.imagen1{
   width: 100%;
 }
 
-img.imagen2{
+.imagen2 img{
   width: 100%;
-  float: right;
   border: 1px solid;
+  transition: transform 1s;
+}
+.imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
   
 }
-
-img.imagen3{
+.imagen3 img{
   width: 100%;
-  float: left;
   border: 1px solid;
+  transition: transform 1s;
+}
+
+.imagen3 img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
 }
 
 figcaption{
   text-align: center;
-
+  text-decoration: underline;
 }
-
-
 }
