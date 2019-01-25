@@ -1,11 +1,6 @@
 body{
 font-family: 'Dancing Script', cursive;
 background-color: #02010a;
-
-}
-
-body img{
-  box-shadow: 2px 2px 0 #02010a;
 }
 
 body #contenido{
@@ -87,10 +82,15 @@ nav ul li a {
 
 img.imagen1{
   width: 100%;
+  box-shadow: 2px 2px 0 #02010a;
 }
 
 /*Tercera Seccion*/
 
+#imagenes-secundarias{
+  box-shadow: 2px 2px 0 #02010a;
+
+}
 #imagenes-secundarias .imagen2{
   width: 50%;
   float: left;
@@ -147,17 +147,17 @@ figcaption{
 
 .redes-sociales img{
   width: 10%;
-  box-shadow: 0 0 0 0;
+  padding-right: 2%;
 }
+
 .derechos{
   width: 25%;
   float: left;
 }    
 
 .derechos img{
-  width: 5%;
-  box-shadow: 0 0 0 0;
-  padding-right: 5%;
+  width: 8%;
+  padding-right: 2%;
 }
 }
 
@@ -197,9 +197,17 @@ nav ul li a {
     padding: 0 10px;
     color: white;
 }
+/*Segunda Seccion*/
 
 img.imagen1{
   width: 100%;
+  box-shadow: 2px 2px 0 #02010a;
+}
+
+/*Tercera Seccion*/
+
+#imagenes-secundarias{
+  box-shadow: 2px 2px 0 #02010a;
 }
 
 .imagen2 img{
@@ -226,5 +234,33 @@ img.imagen1{
 figcaption{
   text-align: center;
   text-decoration: underline;
+}
+
+/*Pie de pagina*/
+
+.contacto{
+  width: 100%;
+  
+}
+    
+.terminos{
+  width: 100%;
+}
+
+.redes-sociales{
+  width: 100%;
+}
+
+.redes-sociales img{
+  width: 4%;
+  padding-right: 2%;
+}
+.derechos{
+  width: 100%;
+}    
+
+.derechos img{
+  width: 3%;
+  padding-right: 2%;
 }
 }
