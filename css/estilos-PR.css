@@ -1,0 +1,316 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a; 
+}
+
+body #contenido{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+#contenido{
+    display: flex;
+    flex-flow: row wrap;
+}
+    
+header {
+    background-color: #5b7989;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    order: 1;
+    width: 100%;
+    animation: cabecera 1s;
+  }
+  
+  @-webkit-keyframes cabecera{
+  
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+  }
+  
+    
+#galeria {
+    background-color: #d5c75f;
+    order:2;
+    width: 100%;
+    padding: 2%
+}
+    
+footer{
+    border-radius: 0 0 10px 10px;
+    background-color: #c6d5c5;
+    order: 3;
+    width: 100%;
+    padding-left: 5%;
+}
+
+nav ul li a.nounderline{
+    text-decoration: none;
+}
+    
+/*Pantalla de Computadora*/
+    
+@media (min-width:900px){
+
+/*Primera Seccion*/
+
+h1{
+    float: left;
+    padding-left: 5%;
+    text-shadow: 2px 0 0 #02010a;
+}
+    
+nav{
+    float: right;
+}
+    
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 5%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 5;
+}
+        
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+}
+    
+/*Segunda Seccion*/
+    
+#galeria .imagen1{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen1 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px)
+}
+
+#galeria .imagen2{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen2 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+#galeria .imagen3{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen3 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+#galeria .imagen4{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen4 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#galeria .imagen5{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen5 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#galeria .imagen6{
+    width: 33%;
+    float: left;
+}
+
+#galeria .imagen6 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+div img:nth-child (even){
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+    
+/*Pie de pagina*/
+    
+.contacto{
+  float: left;
+  width: 25%;
+  
+}
+    
+.terminos{
+  width: 25%;
+  float: left;
+}
+
+.redes-sociales{
+  width: 25%;
+  float: left;
+  align-self: auto;
+}
+
+.redes-sociales img{
+  width: 10%;
+  padding-right: 2%;
+}
+
+.derechos{
+  width: 25%;
+  float: left;
+}    
+
+.derechos img{
+  width: 8%;
+  padding-right: 2%;
+}
+}
+    
+/*Pantalla Celular*/
+    
+@media (max-width:900px){
+
+/*Cabecera*/
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 2px 0 0 #02010a;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 3;
+}
+      
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+}
+
+/*Segunda Seccion*/
+
+#galeria #imagenes div{
+    margin: 5%;
+}
+.imagen1 img{
+    width: 100%;
+    box-shadow: 2px 2px 0 #02010a;
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px)
+}
+
+.imagen2 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 100%;
+}
+
+.imagen3 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 100%;
+}
+
+.imagen4 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 100%;
+}
+
+.imagen5 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 100%;
+}
+
+.imagen6 img{
+    box-shadow: 2px 2px 0 #02010a;
+    width: 100%;
+
+}
+
+/*Pie de pagina*/
+
+.contacto{
+  width: 100%;
+  
+}
+    
+.terminos{
+  width: 100%;
+}
+
+.redes-sociales{
+  width: 100%;
+}
+
+.redes-sociales img{
+  width: 4%;
+  padding-right: 2%;
+}
+.derechos{
+  width: 100%;
+}    
+
+.derechos img{
+  width: 3%;
+  padding-right: 2%;
+}
+}

@@ -8,10 +8,10 @@ body #contenido{
   margin-right: auto;
   max-width: 900px;
 }
+
 #contenido{
   display: flex;
   flex-flow: row wrap;
-  align-content: center;
 }
 
 header {
@@ -20,6 +20,20 @@ header {
   border-radius: 10px 10px 0 0;
   order: 1;
   width: 100%;
+  animation: cabecera 1s;
+}
+
+@-webkit-keyframes cabecera{
+
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 
 #imagen-principal {
@@ -43,16 +57,22 @@ footer{
   background-color: #c6d5c5;
   order: 4;
   width: 100%;
-  padding-left: 4%;
+  padding-left: 5%;
+}
+
+nav ul li a.nounderline{
+  text-decoration: none;
 }
 
 /*Pantalla de Computadora*/
 
 @media (min-width:900px){
 
+  /*Primera Seccion*/
+
 h1{
     float: left;
-    padding-left: 20px;
+    padding-left: 5%;
     text-shadow: 2px 0 0 #02010a;
 }
 
@@ -64,7 +84,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-right: 20px;
+    padding-right: 5%;
 }
 
 nav ul li {
@@ -87,10 +107,6 @@ img.imagen1{
 
 /*Tercera Seccion*/
 
-#imagenes-secundarias{
-  box-shadow: 2px 2px 0 #02010a;
-
-}
 #imagenes-secundarias .imagen2{
   width: 50%;
   float: left;
@@ -102,6 +118,7 @@ img.imagen1{
 .imagen2 img{
   width: 100%;
   border: 1px solid;
+  box-shadow: 2px 2px 0 #02010a;
   transition: transform 1s;
 }
 
@@ -113,6 +130,7 @@ img.imagen1{
 .imagen3 img{
   width: 100%;
   border: 1px solid;
+  box-shadow: 2px 2px 0 #02010a;
   transition: transform 1s;
 }
 
@@ -164,8 +182,7 @@ figcaption{
 /*Pantalla Celular*/
 
 @media (max-width:900px){
-
-/*Cabecera*/
+  /*Cabecera*/
 
   h1{
     margin-left: auto;
