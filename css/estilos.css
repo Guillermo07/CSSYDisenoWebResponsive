@@ -64,6 +64,14 @@ nav ul li a.nounderline{
   text-decoration: none;
 }
 
+figcaption{
+  text-align: center;
+  text-decoration: underline;
+}
+
+figcaption a{
+  color: #02010a;
+}
 /*Pantalla de Computadora*/
 
 @media (min-width:900px){
@@ -137,11 +145,6 @@ img.imagen1{
 .imagen3 img:hover{
   transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
-}
-
-figcaption{
-  text-align: center;
-  text-decoration: underline;
 }
 
 /*Pie de pagina*/
@@ -246,11 +249,6 @@ img.imagen1{
 .imagen3 img:hover{
   transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
-}
-
-figcaption{
-  text-align: center;
-  text-decoration: underline;
 }
 
 /*Pie de pagina*/
